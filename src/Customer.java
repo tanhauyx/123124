@@ -1,8 +1,11 @@
+import java.util.Date;
+
 public class Customer {
     private  String id;
     private  String name;
     private  String phone;
     private  String carId;
+    private Date birthDate;
 
     public String getId() {
         return id;
@@ -34,5 +37,13 @@ public class Customer {
 
     public void setCarId(String carId) {
         this.carId = carId;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 }
